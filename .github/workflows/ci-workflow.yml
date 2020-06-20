@@ -1,0 +1,12 @@
+name: Starter CI
+on: [push]
+
+jobs:
+  build:
+    steps:
+      - name: 'Install dependencies'
+        run: npm install
+      - name: 'Lint'
+        run: npm run lint
+      - name: 'Test'
+        run: npm run test
